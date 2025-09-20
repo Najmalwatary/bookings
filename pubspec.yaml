@@ -1,0 +1,52 @@
+name: booking_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # توسيع نطاق التوافق
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- الحزم الأساسية ---
+  cupertino_icons: ^1.0.8
+  
+  # --- إدارة الحالة والمسارات والتخزين ---
+  get: ^4.6.6                # ✅ تحديث: إصدار مستقر ومتوافق
+  get_storage: ^2.1.1          # ✅ إضافة: الحزمة المطلوبة لحفظ الإعدادات
+
+  # --- خدمات أخرى ---
+  shared_preferences: ^2.2.3   # يمكنك إزالتها لاحقًا إذا اعتمدت على GetStorage فقط
+  flutter_rating_bar: ^4.0.1
+  image_picker: ^1.2.0
+  
+  # --- الترجمة ---
+  # ملاحظة: هذه الحزمة قد لا تكون ضرورية إذا كنت تستخدم نظام ترجمة GetX المدمج
+  flutter_localization: ^0.2.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # --- حزم التطوير ---
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1 # ✅ تم وضعه هنا لأنه من حزم التطوير
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+    - assets/images/icon1.png # ✅ تأكد من إضافة مسار الأيقونة هنا أيضًا
+
+# --- إعدادات أيقونة التطبيق ---
+flutter_launcher_icons:
+  android: "launcher_icon"   # اسم الأيقونة في أندرويد
+  ios: true                  # تفعيل إنشاء الأيقونات لـ iOS
+  image_path: "assets/images/icon1.png" # مسار صورة الأيقونة الخاصة بك
+  min_sdk_android: 21        # (اختياري)
