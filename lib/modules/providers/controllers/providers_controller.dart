@@ -34,7 +34,7 @@ class ProvidersController extends GetxController {
       isLoading.value = true;
       // !! تأكد من أن هذا الـ IP صحيح لجهازك !!
       final url = Uri.parse(
-        'http://192.168.0.114/booking_api/get_providers.php',
+        'http://192.168.0.100/booking_api/get_providers.php',
       );
       final response = await http.get(url);
 
