@@ -30,7 +30,7 @@ class ProvidersController extends GetxController {
   Future<void> _fetchAndFilterProviders(String? serviceType) async {
     try {
       isLoading.value = true;
-      final url = Uri.parse('http://192.168.0.101/booking_api/get_providers.php' );
+      final url = Uri.parse('http://192.168.0.169/booking_api/get_providers.php' );
       final response = await http.get(url );
 
       if (response.statusCode == 200) {

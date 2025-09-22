@@ -173,7 +173,8 @@ class LoginView extends GetView<AuthController> {
                                 style: TextButton.styleFrom(
                                   padding: EdgeInsets.zero,
                                   minimumSize: const Size(50, 30),
-                                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                  tapTargetSize:
+                                      MaterialTapTargetSize.shrinkWrap,
                                   alignment: Alignment.centerLeft,
                                 ),
                                 onPressed: () {

@@ -85,7 +85,7 @@ class ProviderCardWidget extends StatelessWidget {
     final imageUrl =
         (provider.image != null && provider.image!.startsWith('http'))
             ? provider.image!
-            : 'http://192.168.0.101/booking_api/images/${provider.image}';
+            : 'http://192.168.0.169/booking_api/images/${provider.image}';
 
     if (provider.image != null && provider.image!.isNotEmpty) {
       return Image.network(
