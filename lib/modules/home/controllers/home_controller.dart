@@ -37,7 +37,7 @@ class HomeController extends GetxController {
       'description': 'land_visa_best_agencies',
       'icon': 'directions_bus',
       'route': AppRoutes.providers,
-      "service_type": "land_transport",
+      "service_type": "نقل بري",
     },
     {
       'id': 2, // ✅ إضافة ID لكل خدمة

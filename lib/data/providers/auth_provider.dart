@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class AuthProvider {
   // هام: استخدم هذا العنوان إذا كنت تختبر على محاكي أندرويد
-  final String _baseUrl = "http://192.168.0.100/booking_api";
+  final String _baseUrl = "http://192.168.0.101/booking_api";
 
   // إذا كنت تختبر على هاتف حقيقي، استبدل العنوان بعنوان IP لجهاز الكمبيوتر
   // يمكنك الحصول عليه بكتابة 'ipconfig' في موجه الأوامر (cmd ) في ويندوز

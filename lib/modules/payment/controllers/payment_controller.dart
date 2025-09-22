@@ -87,7 +87,7 @@ class PaymentController extends GetxController {
 
     try {
       final url = Uri.parse(
-        'http://192.168.0.100/booking_api/get_company_account.php',
+        'http://192.168.0.101/booking_api/get_company_account.php',
       );
       final response = await http
           .post(url, body: {'bank_id': bankId.toString()})
@@ -116,7 +116,7 @@ class PaymentController extends GetxController {
 
     try {
       final url = Uri.parse(
-        'http://192.168.0.100/booking_api/process_payment.php',
+        'http://192.168.0.101/booking_api/process_payment.php',
       );
       final response = await http
           .post(
